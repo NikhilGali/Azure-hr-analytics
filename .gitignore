@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (exclude real data, keep samples)
+data/raw/*.csv
+data/processed/*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Azure credentials — NEVER commit these
+*.json.local
+connection_strings.txt
+azure_credentials.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Power BI
+*.pbix
